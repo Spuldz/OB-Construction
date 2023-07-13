@@ -1,0 +1,229 @@
+
+.section_top{
+    width: 100%;
+    height: 951px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../assets//luxuryHouse.png.png);
+    display: grid;
+    place-items: center;
+}
+
+.section2{
+    width: 100%;
+    height: 574px;
+    background-color: #242322;
+    box-sizing: border-box;
+
+}
+
+.section2Top{
+    width: 100%;
+    height: 50%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.section2Bottom{
+    width: 100%;
+    height: 50%;
+    display: grid;
+
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: white;
+}
+
+
+.section3{
+    height: 1100px;
+    width: 100%;
+    background-color: #343331;
+}
+
+.section3Top{
+    width: 100%;
+    height: 30%;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 67px;
+
+color: #F5F5F5;
+}
+
+.section3Bottom{
+    width: 100%;
+    height: 70%;
+    display: grid;
+    place-items: center;
+}
+
+.section4{
+    height: 1505px;
+    width: 100%;
+    background-color: #242322;
+    padding-left: 101px;
+    padding-right: 101px;
+    box-sizing: border-box;
+}
+
+.section4Top{
+ font-family: 'Cinzel';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 81px;
+text-transform: uppercase;
+color: #F5F5F5;
+width: 100%;
+height: 15%;
+display: grid;
+place-items: center;
+text-align: center;
+box-sizing: border-box;
+}
+
+.section4Bottom{
+    width: 100%;
+    height: 85%;
+}
+
+.section4Left{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 661px;
+}
+
+.section4Left p{
+font-family: 'Cabin';
+font-style: normal;
+font-weight: 700;
+font-size: 38px;
+line-height: 46px;
+text-transform: uppercase;
+color: #F5F5F5;
+}
+
+.section4Left span{
+ font-family: 'Cabin';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+color: #F5F5F5;
+text-align: left;
+}
+
+.section4Left div{
+width: 204px;
+height: 58px;
+background: linear-gradient(90deg, #D4AE5F 0%, #A18448 100%);
+border-radius: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Cabin';
+font-style: normal;
+font-weight: 700;
+font-size: 21px;
+line-height: 26px;
+color: #F8F8F8;
+gap: 15px;
+cursor: pointer;
+
+}
+
+.section4Right{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: right;
+}
+
+
+
+.section4Right p{
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #F5F5F5;
+    text-align: right;
+    }
+    
+    .section4Right span{
+     font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #F5F5F5;
+    }
+    
+    .section4Right div{
+    width: 204px;
+    height: 58px;
+    background: linear-gradient(90deg, #D4AE5F 0%, #A18448 100%);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    color: #F8F8F8;
+    gap: 15px;
+    align-self: flex-end;
+    cursor: pointer;
+    
+}
+
+.section5{
+    width: 100%;
+    height: 900px;
+    background-color: #343331;
+    padding-left: 127px;
+    padding-top: 93px;
+    box-sizing: border-box;
+}
+
+    .section5Top{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 75px;
+    color: #F5F5F5;
+    text-align: left;
+    word-wrap: break-word; 
+    max-width: 870px;
+    }
+
+.section5Bottom{
+    width: 100%;
+}
