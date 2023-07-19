@@ -84,18 +84,32 @@
     width: 532px;
     height: 74px;
     border-radius: 16px;
+    font-family: "Cabin", sans-serif;
 }
 
 .textarea{
     width: 532px;
     height: 220px;
     border-radius: 16px;
+    font-family: "Cabin", sans-serif;
+
 }
 
-.question{
+.agreement{
     width: 532px;
     display: flex;
-    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    font-family: "Cabin", sans-serif;
+    font-size: 21px;
+    color: white;
+}
+
+.agreement input{
+    width: 30px;
+    height: 30px;
+    border-radius: 0px;
+    cursor: pointer;
 }
 
 .textInputSmall{

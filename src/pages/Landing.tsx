@@ -9,8 +9,11 @@ import { FormFooter } from "../components/FormFooter"
 
 import client from '../assets/client.png'
 import example from '../assets/example.png'
+import { useNavigate } from "react-router-dom"
 
 export const Landing = () => {
+
+   const nav = useNavigate()
 
     return(
         <div>
@@ -54,54 +57,11 @@ export const Landing = () => {
                   <span>Mūsu pakalpojumi</span>
                  </div>
                  <div className={styles.section4Bottom}>
-                     <div className={styles.section4Left}>
-                        <p>Bruģa ieklāšana</p>
-                        <span>
-                        Mēs piedāvājam dažādu veidu bruģēšanas
-                         pakalpojumus, sākot no pamatu izveides
-                          līdz galīgajai bruģēšanas kārtošanai.
-                        </span>
-                        <br/>
-                        <div>
-                           Uzzināt vairāk
-                           <img src={arrowRightSmall}/>
-                        </div>
-                     </div>
-                     <div className={styles.section4Right}>
-                        <p>Pagalmu labiekārtošana</p>
-                        <span>
-                        Mēs piedāvājam dažādu veidu bruģēšanas<br/> pakalpojumus,
-                         sākot no pamatu izveides līdz<br/> galīgajai bruģēšanas kārtošanai.
-                        </span>
-                        <br/>
-                        <div>
-                           Uzzināt vairāk
-                           <img src={arrowRightSmall}/>
-                        </div>
-                     </div>
-                     <div className={styles.section4Left}>
-                        <p>Koka mēbelesa</p>
-                        <span>
-                        Mēs piedāvājam dažādu veidu bruģēšanas pakalpojumus,
-                         sākot no pamatu izveides līdz galīgajai bruģēšanas kārtošanai.
-                        </span>
-                        <br/>
-                        <div>
-                           Uzzināt vairāk
-                           <img src={arrowRightSmall}/>
-                        </div>
-                     </div>
-                     <div className={styles.section4Right}>
-                        <p>Pagalmu labiekārtošana</p>
-                        <span>
-                        Mēs piedāvājam dažādu veidu bruģēšanas<br/> pakalpojumus,
-                         sākot no pamatu izveides līdz<br/> galīgajai bruģēšanas kārtošanai.
-                        </span>
-                        <br/>
-                        <div>
-                           Uzzināt vairāk
-                           <img src={arrowRightSmall}/>
-                        </div>
+                     <span>Bruģa ieklāšana</span>
+                     <p>Mēs piedāvājam dažādu veidu bruģēšanas pakalpojumus, sākot no pamatu izveides līdz galīgajai bruģēšanas kārtošanai.</p>
+                     <div className={styles.section4Btn} onClick={() => nav("/ieliksana")}>
+                        <span>Uzzināt vairāk</span>
+                        <img src={arrowRightSmall}/>
                      </div>
                  </div>
             </div>

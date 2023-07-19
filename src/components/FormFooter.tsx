@@ -35,17 +35,9 @@ export const FormFooter = () => {
                     <br/>
                     <textarea className={styles.textarea} id='textareaInput'></textarea>
                 </div>
-                <div className={styles.question}>
-                    <div>
-                        <label>Jautājums 1</label>
-                        <br/>
-                        <input className={styles.textInputSmall}/>
-                    </div>
-                    <div>
-                        <label>Jautājums 2</label>
-                        <br/>
-                        <input className={styles.textInputSmall}/>
-                    </div>
+                <div className={styles.agreement}>
+                    <input type='checkbox'/>
+                    <span>Piekrītu obconstructions.lv privātuma politikai</span>
                 </div>
                 <div className={styles.btn}>
                     <span>Saņemt bezmaksas konsultāciju</span>
