@@ -1,11 +1,11 @@
-import { Footer } from "../components/Footer"
+import { FormFooter } from "../components/FormFooter"
 import { Header } from "../components/Header"
 
 export const Contact = () => {
     return(
         <div>
             <Header/>
-            <Footer/>
+            <FormFooter/>
         </div>
     )
 }

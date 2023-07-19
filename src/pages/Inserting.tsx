@@ -12,6 +12,12 @@ import {constructionTypes} from '../data/constructionTypes'
 import { services } from "../data/services"
 import { TitleParagraph } from "../components/inserting/TitleParagraph"
 import differences from '../data/differences.json'
+import { InfoCard } from "../components/InfoCard"
+
+import client from '../assets/client.png'
+import example from '../assets/example.png'
+import { Question } from "../components/Question"
+import { Footer } from "../components/Footer"
 
 
 type Data = {
@@ -70,9 +76,32 @@ export const Inserting = () => {
                 <span>Mēs esam apņēmības pilni, lai nodrošinātu jums visasugstāko kvalitāti un pārsteidzošu pieredzi</span>
             </div>
             <div className={styles.section6}>
-                <div className={styles.section6Top}></div>
-                <div className={styles.section6Bottom}></div>
+                <div className={styles.section6Top}>
+                    <span>Klientu Atsauksmes</span>
+                </div>
+                <div className={styles.section6Bottom}>
+                    <InfoCard info={{
+                        name: "Karlis",
+                        examplePhoto: example,
+                        clientPhoto: client
+                    }}/>
+                </div>
             </div>
+            <div className={styles.section7}>
+                <div className={styles.section7Top}>
+                    <div>
+                        <span>Pirms Jūs ar mums sazinaties šeit ir daži jautājumi, kuri Jums varēja rasties:</span>
+                    </div>
+                </div>
+                <div className={styles.section7Bottom}>
+                  <Question q="Pirmais jautājums?" a="Atbilde uz jautājumu..."/>
+                  <Question q="Otrais jautājums?" a="Atbilde uz jautājumu..."/>
+                  <Question q="Trešais jautājums?" a="Atbilde uz jautājumu..."/>
+                  <Question q="Ceturtais jautājums?" a="Atbilde uz jautājumu..."/>
+                  <Question q="Piektais jautājums?" a="Atbilde uz jautājumu..."/>
+                </div>
+            </div>
+            <Footer/>
         </>
     )
 }

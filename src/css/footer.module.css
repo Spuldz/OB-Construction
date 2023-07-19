@@ -1,123 +1,82 @@
+
+
 .main{
     width: 100%;
-    height: 1000px;
+    height: 1009px;
     background-color: #242322;
-    display: flex;
-}
-
-
-
-.left{
-    height: 100%;
-    width: 50%;
     box-sizing: border-box;
-    padding-top: 150px;
-    padding-left: 127px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 20px;
     position: relative;
-    
+    padding-top: 120px;
 }
 
-.left p{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 26px;
-    color: #F5F5F5;
+.top{
+    width: 100%;
+    height: 33%;
+   
 }
 
-.title{
-    font-family: 'Cinzel';
-    font-style: normal;
+.top div{
+    width: 1184px;
+    font-family: "Cinzel", sans-serif;
     font-weight: 700;
-    font-size: 70px;
-    line-height: 94px;
-    text-transform: uppercase;
-    color: #F5F5F5;
-
-}
-
-.info{
-    display: flex;
+    font-size: 56px;
+    color: white;
     text-align: left;
-    gap: 32px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
 }
 
-.leftBottomText{
-    position: absolute;
-    bottom: 45px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #F5F5F5;
-}
-
-.right{
-    height: 100%;
-    width: 50%;
-    box-sizing: border-box;
-    padding-top: 150px;
-    padding-left: 127px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-
-.right label{
-    font-family: 'Cabin';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 26px;
-    color: #F5F5F5;
-}
-
-.textInputLarge{
-    width: 532px;
-    height: 74px;
-    border-radius: 16px;
-}
-
-.textarea{
-    width: 532px;
-    height: 220px;
-    border-radius: 16px;
-}
-
-.question{
-    width: 532px;
+.middle{
+    width: 100%;
+    height: 33%;
     display: flex;
     justify-content: space-between;
 }
 
-.textInputSmall{
-    width: 250;
-    height: 74px;
-    border-radius: 16px;
+.image{
+    width: 351px;
+    height: 351px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../assets/logo-small.svg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -45%);
+    border: none;
+}
+
+.middleLeft div{
+    width: 640px;
+    font-family: 'Cabin', sans-serif;
+    color: white;
+    font-size: 30px;
 }
 
 .btn{
-    display: flex;
-    width: 532px;
-    height: 80px;
-    background: linear-gradient(90deg, #D4AE5F 0%, #A18448 100%);
-    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.07), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+    width: 418px;
+    height: 74px;
     border-radius: 100px;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Cabin';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 26px;
-    color: #F5F5F5;
-    gap: 10px;
+    background: linear-gradient(90deg, #D4AE5F 0%, #A18448 100%);
+    display: grid;
+    place-items: center;
 }
+
+
+.bottom{
+    width: 100%;
+    height: 34%;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    gap: 30px;
+    color: #F5F5F5;
+}
+
+.bottom div{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+

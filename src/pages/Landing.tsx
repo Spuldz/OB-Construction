@@ -5,7 +5,10 @@ import styles from '../css/landing.module.css'
 
 import arrowRightSmall from '../assets/arrowRightSmall.svg'
 import { Question } from "../components/Question"
-import { Footer } from "../components/Footer"
+import { FormFooter } from "../components/FormFooter"
+
+import client from '../assets/client.png'
+import example from '../assets/example.png'
 
 export const Landing = () => {
 
@@ -39,7 +42,11 @@ export const Landing = () => {
                     <span>klientu atsauksmes</span>
                  </div>
                  <div className={styles.section3Bottom}>
-                  <InfoCard/>
+                  <InfoCard info={{
+                     name: "Karlis",
+                     examplePhoto: example,
+                     clientPhoto: client
+                  }}/>
                  </div>
             </div>
             <div className={styles.section4}>
@@ -112,7 +119,7 @@ export const Landing = () => {
                   <Question q="Piektais jautājums?" a="Atbilde uz jautājumu..."/>
                  </div>
             </div>
-            <Footer/>
+            <FormFooter/>
         </div>
     )
 }

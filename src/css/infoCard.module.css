@@ -71,7 +71,6 @@
     border-radius: 50%;
     background-position: center;
     background-size: cover;
-    background-image: url(../assets/client.png);
 }
 
 .examplePhoto{
@@ -79,5 +78,4 @@
     height: 243px;
     background-position: center;
     background-size: cover;
-    background-image: url(../assets/example.png);
 }

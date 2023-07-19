@@ -1,56 +1,33 @@
 import styles from '../css/footer.module.css'
-import send from '../assets/send.svg'
+
+import logo from '../assets/logo-small.svg'
 
 export const Footer = () => {
-
     return(
         <div className={styles.main}>
-            <div className={styles.left}>
-                <span className={styles.title}>Padomā<br/> kāds<br/> projekts?</span>
-                <br/>
-                <p>Aizpildiet doto anketu, un mēs ar jums sazināsimies,<br/>
-                     izmantojot jūsu norādīto tālruņa numuru vai epasta adresi,<br/> kad vien tas būs iespējams.
-                </p>
-                <div className={styles.info}>
-                    <span style={{color: "#9A7426"}}>info@obconstruction.lv</span>
-                    <span style={{color: "#F5F5F5"}}>+371 27 767 420</span>
+            <div className={styles.image}></div>
+            <div className={styles.top}>
+                <div>
+                <span>Ja vēl neesat pārliecināts, kā labāk iekārtot savu pagalmu, mēs ar prieku sniegsim jums palīdzību</span>
                 </div>
-                <span className={styles.leftBottomText}>
-                    2023 OBConstruction. Visas tiesības aizsargātas.
-                </span>
             </div>
-            <div className={styles.right}>
-                <div>
-                    <label htmlFor='nameInput'>Vārds</label>
-                    <br/>
-                    <input id='nameInput'className={styles.textInputLarge} placeholder='Vārds'/>
-                </div>
-                <div>
-                    <label htmlFor='emailInput'>Jūsu e-pasta adrese</label>
-                    <br/>
-                    <input id='emailInput' className={styles.textInputLarge} placeholder='Ēpasts'/>
-                </div>
-                <div>
-                    <label htmlFor='textareaInput'>Pastāstiet par savu projektu</label>
-                    <br/>
-                    <textarea className={styles.textarea} id='textareaInput'></textarea>
-                </div>
-                <div className={styles.question}>
+            <div className={styles.middle}>
+                <div className={styles.middleLeft}>
                     <div>
-                        <label>Jautājums 1</label>
-                        <br/>
-                        <input className={styles.textInputSmall}/>
+                        <span>Mēs vēlamies būt atpazīstami kā uzņēmums, kas piedāvā izcilus pakalpojumus, palīdzot cilvēkiem
+                        radīt skaistus, funkcionālus un ilgtspējīgus pagalums.</span>
                     </div>
-                    <div>
-                        <label>Jautājums 2</label>
-                        <br/>
-                        <input className={styles.textInputSmall}/>
+                    <br/>
+                    <div className={styles.btn}>
+                        <span>Padomā kāds projekts? Sazinamies!</span>
                     </div>
                 </div>
-                <div className={styles.btn}>
-                    <span>Saņemt bezmaksas konsultāciju</span>
-                    <img src={send}/>
+                <div className={styles.middleRight}>
                 </div>
+            </div>
+            <div className={styles.bottom}>
+                <span>(c) 2023  SIA OB Constructions. Visas tiesības aizsargātas.</span>
+                <div></div>
             </div>
         </div>
     )
