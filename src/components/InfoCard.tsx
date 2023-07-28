@@ -14,6 +14,7 @@ export const InfoCard = (props: {info:Info}) => {
 
     const [leftClicked, setLeftClicked] = useState(false)
     const [rightClicked, setRightClicked] = useState(false)
+    
 
     return(
         <div className={styles.main}>
