@@ -47,7 +47,7 @@
     border: none;
 }
 
-.middleLeft div{
+.middleLeftInfo{
     width: 640px;
     font-family: 'Cabin', sans-serif;
     color: white;
@@ -61,8 +61,76 @@
     background: linear-gradient(90deg, #D4AE5F 0%, #A18448 100%);
     display: grid;
     place-items: center;
+    color: #F8F8F8;
+    font-family: "Cabin", sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+ 
+    /*
+      Introduced in IE 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
 }
 
+.btn:hover{
+    width: 418px;
+    height: 74px;
+    border-radius: 100px;
+    background: linear-gradient(90deg, #D4AE5F 0%, #A18448 100%);
+    display: grid;
+    place-items: center;
+    color: #EBEBEA;
+    font-family: "Cabin", sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+ 
+    /*
+      Introduced in IE 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn_active{
+    width: 418px;
+    height: 74px;
+    border-radius: 100px;
+    background: linear-gradient(90deg, #D4AE5F 0%, #A18448 100%);
+    display: grid;
+    place-items: center;
+    color: #F8F8F8;
+    font-family: "Cabin", sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+ 
+    /*
+      Introduced in IE 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
+    opacity: 0.8;
+    cursor: pointer;
+}
 
 .bottom{
     width: 100%;

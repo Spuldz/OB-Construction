@@ -2,6 +2,7 @@ import styles from '../css/infoCard.module.css'
 import arrowLeft from '../assets/arrowLeft.svg'
 import arrowRight from '../assets/arrowRight.svg'
 import karlis from '../assets/karlis.png'
+import { useState } from 'react'
 
 type Info = {
     name: string
@@ -11,9 +12,14 @@ type Info = {
 
 export const InfoCard = (props: {info:Info}) => {
 
+    const [leftClicked, setLeftClicked] = useState(false)
+    const [rightClicked, setRightClicked] = useState(false)
+
     return(
         <div className={styles.main}>
-            <div className={styles.arrowLeft}>
+            <div className={!leftClicked ? styles.arrowLeft : styles.btn_active}
+            onMouseDown={() => setLeftClicked(true)}
+            onMouseUp={() => setLeftClicked(false)}>
                 <img src={arrowLeft}/>
             </div>
             <div className={styles.card}>
@@ -32,7 +38,9 @@ export const InfoCard = (props: {info:Info}) => {
                     }}></div>
                 </div>
             </div>
-            <div className={styles.arrowRight}>
+            <div className={!rightClicked ? styles.arrowRight : styles.btn_active}
+            onMouseDown={() => setRightClicked(true)}
+            onMouseUp={() => setRightClicked(false)}>
                 <img src={arrowRight}/>
             </div>
         </div>

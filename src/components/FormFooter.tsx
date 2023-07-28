@@ -1,7 +1,10 @@
 import styles from '../css/formFooter.module.css'
 import send from '../assets/send.svg'
+import { useState } from 'react'
 
 export const FormFooter = () => {
+
+    const [clicked, setClicked] = useState(false)
 
     return(
         <div className={styles.main}>
@@ -39,7 +42,9 @@ export const FormFooter = () => {
                     <input type='checkbox'/>
                     <span>Piekrītu obconstructions.lv privātuma politikai</span>
                 </div>
-                <div className={styles.btn}>
+                <div className={!clicked ? styles.btn : styles.btn_active}
+                onMouseDown={() => setClicked(true)}
+                onMouseUp={() => setClicked(false)}>
                     <span>Saņemt bezmaksas konsultāciju</span>
                     <img src={send}/>
                 </div>

@@ -15,7 +15,26 @@
     background-size: cover;
     display: grid;
     place-items: center;
+    cursor: pointer;
 }
+
+.arrowLeft:hover, .arrowRight:hover{
+    transform: scale(110%);
+}
+
+.btn_active{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #D4AE5F 0%, #A18448 100%);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
 
 .card{
     width: 928px;

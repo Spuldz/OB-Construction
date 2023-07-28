@@ -124,6 +124,10 @@ color: #F5F5F5;
 }
 
 .section4Bottom div{
+    font-family: "Cabin", sans-serif;
+    font-size: 21px;
+    color: white;
+
     width: 204px;
     height: 58px;
     border-radius: 100px;
@@ -133,12 +137,70 @@ color: #F5F5F5;
     justify-content: center;
     gap: 10px;
     cursor: pointer;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+ 
+    /*
+      Introduced in IE 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
+
 }
 
-.section4Bottom div span{
+.section4Bottom div:hover{
+    width: 204px;
+    height: 58px;
+    border-radius: 100px;
+    background: linear-gradient(90deg, #D4AE5F 0%, #A18448 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+ 
+    /*
+      Introduced in IE 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
+    font-family: "Cabin", sans-serif;
+    font-size: 21px;
+    color: #EBEBEA;
+    
+}
+
+.section4BottomButtonActive{
     font-family: "Cabin", sans-serif;
     font-size: 21px;
     color: white;
+
+    width: 204px;
+    height: 58px;
+    border-radius: 100px;
+    background: linear-gradient(90deg, #D4AE5F 0%, #A18448 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+ 
+    /*
+      Introduced in IE 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
+    opacity: 0.8;
 }
 
 .section5{

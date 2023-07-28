@@ -10,10 +10,12 @@ import { FormFooter } from "../components/FormFooter"
 import client from '../assets/client.png'
 import example from '../assets/example.png'
 import { useNavigate } from "react-router-dom"
+import { useState } from "react"
 
 export const Landing = () => {
 
    const nav = useNavigate()
+   const [clicked, setClicked] = useState(false)
 
     return(
         <div>
@@ -59,8 +61,12 @@ export const Landing = () => {
                  <div className={styles.section4Bottom}>
                      <span>Bruģa ieklāšana</span>
                      <p>Mēs piedāvājam dažādu veidu bruģēšanas pakalpojumus, sākot no pamatu izveides līdz galīgajai bruģēšanas kārtošanai.</p>
-                     <div className={styles.section4Btn} onClick={() => nav("/ieliksana")}>
-                        <span>Uzzināt vairāk</span>
+                     <div className={!clicked ? styles.section4Btn : styles.section4BottomButtonActive} onMouseDown={() => {
+                        setClicked(true)
+                        nav("/ieliksana")
+                     }}
+                     onMouseUp={() => setClicked(false)}>
+                        Uzzināt vairāk
                         <img src={arrowRightSmall}/>
                      </div>
                  </div>
