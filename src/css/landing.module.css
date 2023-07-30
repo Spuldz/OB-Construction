@@ -227,3 +227,28 @@ color: #F5F5F5;
 .section5Bottom{
     width: 100%;
 }
+
+
+@media(max-width: 682px){
+    .section_top{
+        height: 700px;
+    }
+}
+
+@media(max-width: 548px){
+    .section_top{
+        height: 500px;
+    }
+}
+
+@media(max-width: 408px){
+    .section_top{
+        height: 300px;
+    }
+}
+
+@media(max-width: 350px){
+    .section_top{
+        height: 170px;
+    }
+}
