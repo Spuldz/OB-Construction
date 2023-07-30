@@ -231,7 +231,7 @@ justify-content: space-between;
         font-size: 30px;
     }
 
-    .button{
+    .button, .button:hover, .button_active{
         width: 340px;
         height: 65px;
     }
@@ -256,7 +256,7 @@ justify-content: space-between;
         font-size: 16px;
     }
 
-    .button{
+    .button, .button:hover, .button_active{
         width: 250px;
         height: 50px;
         font-size: 16px;
@@ -278,7 +278,7 @@ justify-content: space-between;
         top: 55%;
     }
 
-    .button{
+    .button, .button:hover, .button_active{
         width: 200px;
         height: 40px;
         font-size: 12px;
@@ -301,7 +301,7 @@ justify-content: space-between;
         font-size: 10px;
     }
 
-    .button{
+    .button, .button:hover, .button_active{
         width: 150px;
         height: 30px;
         font-size: 10px;
@@ -330,7 +330,7 @@ justify-content: space-between;
         height: 30px;
     }
 
-    .button{
+    .button, .button:hover, .button_active{
         width: 100px;
         font-size: 7px;
     }
