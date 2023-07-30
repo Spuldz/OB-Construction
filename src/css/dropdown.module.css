@@ -1,0 +1,64 @@
+.main{
+    width: 245px;
+    height: 236px;
+    background-color: #242322;
+    position: absolute;
+    z-index: 100;
+    left: 55%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.main div{
+    width: 100%;
+    height: calc(236px / 4);
+
+    color: #FFF;
+    font-family: Cabin;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+ 
+    /*
+      Introduced in IE 10.
+      See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+    */
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+.main div:hover{
+    background-color: white;
+    color: black;
+}
+
+@media(max-width: 1260px){
+    .main{
+        left: 47%
+    }
+}
+
+@media(max-width: 1016px){
+    .main{
+        left: 40%;
+    }
+}
+
+@media(max-width: 918px){
+    .main{
+        left: 32%;
+    }
+}
+
+@media(max-width: 782px){
+    .main{
+        left: 22%;
+    }
+}

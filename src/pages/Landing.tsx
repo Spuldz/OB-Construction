@@ -30,7 +30,12 @@ export const Landing = () => {
                     buttonText: "Saņemt bezmaksas konsutlāciju!"
                  }}/>
             </div>  
-            <div className={styles.section2}>
+            
+        </div>
+    )
+}
+
+/*<div className={styles.section2}>
                  <div className={styles.section2Top}>
                     <span>Nepieciešams labiekārtotu teritoriju<br/> vai piemājas pagalmu -  uzticiet šo<br/> pienākumu profesionāļiem</span>
                  </div>
@@ -85,7 +90,4 @@ export const Landing = () => {
                   <Question q="Piektais jautājums?" a="Atbilde uz jautājumu..."/>
                  </div>
             </div>
-            <FormFooter/>
-        </div>
-    )
-}
+           */

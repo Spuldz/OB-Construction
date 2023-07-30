@@ -8,7 +8,7 @@ export const TitleModal = (props: {title:string, body:string, variant: any}) => 
     const [clicked, setClicked] = useState(false)
 
     return(
-        <div className={styles.main} style={{height: props.variant.interactive ? "595px" : "460px"}}>
+        <div className={props.variant.interactive ? styles.main : styles.main2}>
             <div className={styles.top}>
                 <span>{props.title}</span>
             </div>
