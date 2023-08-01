@@ -41,7 +41,6 @@
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
-    line-height: 36px;
     text-align: center;
     color: white;
 }
@@ -250,5 +249,64 @@ color: #F5F5F5;
 @media(max-width: 350px){
     .section_top{
         height: 170px;
+    }
+}
+
+/*SECTION-2*/
+@media(max-width: 1024px){
+    .section2Top{
+        font-size: 40px;
+    }
+
+    .section2Bottom{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 815px){
+    .section2Top{
+        font-size: 30px;
+    }
+
+    .section2Bottom{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 509px){
+    .section2Top{
+        font-size: 20px;
+    }
+
+    .section2Bottom{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 358px){
+    .section2Top{
+        font-size: 15px;
+    }
+
+    .section2Bottom{
+        font-size: 10px;
+    }
+
+    .section2{
+        height: 350px;
+    }
+}
+
+@media(max-width: 300px){
+    .section2Top{
+        font-size: 10px;
+    }
+
+    .section2Bottom{
+        font-size: 8px;
+    }
+
+    .section2{
+        height: 200px;
     }
 }

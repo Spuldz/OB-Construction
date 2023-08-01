@@ -30,7 +30,18 @@ export const Landing = () => {
                     buttonText: "Saņemt bezmaksas konsutlāciju!"
                  }}/>
             </div>  
-            
+            <div className={styles.section2}>
+                 <div className={styles.section2Top}>
+                    <span>Nepieciešams labiekārtotu teritoriju<br/> vai piemājas pagalmu -  uzticiet šo<br/> pienākumu profesionāļiem</span>
+                 </div>
+                 <div className={styles.section2Bottom}>
+                    <span>
+                    Mēs saprotam, cik teritorijas labiekārtošana un uzturēšana ir laikietilpīga,
+                     tāpēc mēs vēlamies<br/> jums palīdzēt. Mēs esam profesionāļi savā nozārē,
+                      tāpēc pakalpojumus sniegsim efektīvi un<br/> kvalitatīvi, atbrīvojot jūsu laiku.
+                    </span>
+                 </div>
+            </div>
         </div>
     )
 }
