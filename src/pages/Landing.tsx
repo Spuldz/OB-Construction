@@ -10,12 +10,25 @@ import { FormFooter } from "../components/FormFooter"
 import client from '../assets/client.png'
 import example from '../assets/example.png'
 import { useNavigate } from "react-router-dom"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export const Landing = () => {
 
    const nav = useNavigate()
    const [clicked, setClicked] = useState(false)
+
+   const [width, setWidth] = useState<number>(window.innerWidth);
+
+
+    function handleWindowSizeChange() {
+        setWidth(window.innerWidth);
+    }
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowSizeChange);
+        return () => {
+            window.removeEventListener('resize', handleWindowSizeChange);
+        }
+    }, []);
 
     return(
         <div>
@@ -54,23 +67,33 @@ export const Landing = () => {
                   }}/>
                  </div>
             </div>
+            <div className={styles.section4}>
+                 <div className={styles.section4Top}>
+                  <span>Mūsu pakalpojumi</span>
+                 </div>
+                 <div className={styles.section4Bottom}>
+                     <span>Bruģa ieklāšana</span>
+                     {width >=  613 ? (
+                        <p>Mēs piedāvājam dažādu veidu bruģēšanas<br/> pakalpojumus, sākot no pamatu izveides līdz<br/> galīgajai bruģēšanas kārtošanai.</p>
+                     ) : (
+                        <p>Mēs piedāvājam dažādu veidu bruģēšanas pakalpojumus, sākot no pamatu izveides līdz galīgajai bruģēšanas kārtošanai.</p>
+                     )}
+                     <div className={!clicked ? styles.section4Btn : styles.section4BottomButtonActive} onMouseDown={() => {
+                        setClicked(true)
+                        nav("/ieliksana")
+                     }}
+                     onMouseUp={() => setClicked(false)}>
+                        Uzzināt vairāk
+                        <img src={arrowRightSmall}/>
+                     </div>
+                 </div>
+            </div>
         </div>
     )
 }
 
 /*
-            <div className={styles.section3}>
-                 <div className={styles.section3Top}>
-                    <span>klientu atsauksmes</span>
-                 </div>
-                 <div className={styles.section3Bottom}>
-                  <InfoCard info={{
-                     name: "Karlis",
-                     examplePhoto: example,
-                     clientPhoto: client
-                  }}/>
-                 </div>
-            </div>
+            
             <div className={styles.section4}>
                  <div className={styles.section4Top}>
                   <span>Mūsu pakalpojumi</span>

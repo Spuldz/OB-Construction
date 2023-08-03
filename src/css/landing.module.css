@@ -103,8 +103,7 @@ color: #F5F5F5;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 510px;
-    padding-right: 510px;
+    
     box-sizing: border-box;
     text-align: center;
 }
@@ -291,6 +290,10 @@ color: #F5F5F5;
     .section3{
         height: 800px;
     }
+
+    .section4Top{
+        font-size: 40px;
+    }
 }
 
 @media(max-width: 509px){
@@ -310,6 +313,24 @@ color: #F5F5F5;
 
     .section3{
         height: 700px;
+    }
+}
+
+@media(max-width: 417px){
+    .section4Top{
+        font-size: 30px;
+    }
+
+    .section4Bottom span{
+        font-size: 30px;
+    }
+
+    .section4Bottom p{
+        font-size: 25px;
+    }
+
+    .section4{
+        height: 600px;
     }
 }
 
@@ -335,6 +356,19 @@ color: #F5F5F5;
     }
 }
 
+@media(max-width: 315px){
+    .section4Top{
+        font-size: 25px;
+    }
+
+    .section4Bottom span{
+        font-size: 25px;
+    }
+    .section4Bottom p{
+        font-size: 20px;
+    }
+}
+
 @media(max-width: 300px){
     .section2Top{
         font-size: 10px;
@@ -351,6 +385,20 @@ color: #F5F5F5;
     .section3{
         height: 400px;
     }
+
+    .section4{
+        height: 500px;
+    }
+}
+
+@media(max-width: 247px){
+    .section4Top{
+        font-size: 20px;
+    }
+
+    .section4Bottom p{
+        font-size: 15px;
+    }
 }
 
 @media(max-width: 240px){
@@ -360,6 +408,30 @@ color: #F5F5F5;
 
     .section3{
         height: 250px;
+    }
+}
+
+@media(max-width: 220px){
+    .section4Bottom div, .section4Bottom div:hover, .section4BottomButtonActive{
+        width: 160px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .section4Bottom span{
+        font-size: 20px;
+    }
+
+    .section4Bottom p{
+        font-size: 10px;
+    }
+
+    .section4Top{
+        font-size: 15px;
+    }
+
+    .section4{
+        height: 400px;
     }
 }
 
