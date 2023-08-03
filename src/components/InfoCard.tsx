@@ -21,7 +21,7 @@ export const InfoCard = (props: {info:Info}) => {
             <div className={!leftClicked ? styles.arrowLeft : styles.btn_active}
             onMouseDown={() => setLeftClicked(true)}
             onMouseUp={() => setLeftClicked(false)}>
-                <img src={arrowLeft}/>
+                <img src={arrowLeft} className={styles.arrow}/>
             </div>
             <div className={styles.card}>
                 <div className={styles.cardLeft}>
@@ -42,7 +42,7 @@ export const InfoCard = (props: {info:Info}) => {
             <div className={!rightClicked ? styles.arrowRight : styles.btn_active}
             onMouseDown={() => setRightClicked(true)}
             onMouseUp={() => setRightClicked(false)}>
-                <img src={arrowRight}/>
+                <img src={arrowRight} className={styles.arrow}/>
             </div>
         </div>
     )

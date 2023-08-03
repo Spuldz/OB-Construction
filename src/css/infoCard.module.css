@@ -56,7 +56,6 @@
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
-    line-height: 40px;
 
     color: #FFFFFF;
 }
@@ -73,7 +72,6 @@
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
-    line-height: 36px;
     color: white;
 }
 
@@ -97,4 +95,280 @@
     height: 243px;
     background-position: center;
     background-size: cover;
+}
+
+@media(max-width: 1185px){
+
+    .card{
+        width: 850px;
+    }
+}
+
+@media(max-width: 1109px){
+    .card{
+        width: 800px;
+    }
+
+    .cardMiddle{
+        font-size: 20px;
+    }
+
+    .examplePhoto{
+        width: 200px;
+        height: 200px;
+    }
+
+    .client{
+        width: 150px;
+        height: 150px;
+    }
+
+    .arrowLeft, .arrowRight, .arrowLeft:hover, .arrowRight:hover, .btn_active{
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media(max-width: 1029px){
+    .card{
+        width: 700px;
+        height: 400px;
+    }
+
+    .main{
+        gap: 20px;
+    }
+}
+
+@media(max-width: 897px){
+    .main{
+        gap: 5px;
+    }
+
+    .card{
+        width: 600px;
+        height: 300px;
+    }
+
+    .examplePhoto{
+        width: 150px;
+        height: 150px;
+    }
+
+    .cardMiddle{
+        font-size: 15px;
+    }
+
+    .client{
+        width: 100px;
+        height: 100px;
+    }
+
+    .cardLeft{
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 769px){
+    .card{
+        width: 550px;
+    }
+}
+
+@media(max-width: 717px){
+    .card{
+        width: 500px;
+        height: 250px;
+    }
+
+    .examplePhoto{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media(max-width: 669px){
+    .arrowLeft, .arrowRight, .arrowLeft:hover, .arrowRight:hover, .btn_active{
+        width: 50px;
+        height: 50px;
+    }
+
+    .arrow{
+        width: 30px;
+        height: 30px;
+    }
+
+    .card{
+        width: 450px;
+    }
+}
+
+@media(max-width: 577px){
+    .card{
+        width: 400px;
+        height: 200px;
+    }
+
+    .cardMiddle{
+        font-size: 12px;
+    }
+
+    .client{
+        width: 80px;
+        height: 80px;
+    }
+
+    .cardLeft{
+        gap: 0px;
+    }
+
+    .examplePhoto{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media(max-width: 521px){
+    .card{
+        width: 350px;
+        height: 180px;
+    }
+}
+
+@media(max-width: 467px){
+    .card{
+        width: 300px;
+        height: 140px;
+    }
+
+    .client{
+        width: 60px;
+        height: 60px;
+    }
+
+    .examplePhoto{
+        width: 80px;
+        height: 80px;
+    }
+
+    .cardMiddle{
+        font-size: 8px;
+    }
+
+    .arrowLeft, .arrowRight, .arrowLeft:hover, .arrowRight:hover, .btn_active{
+        width: 40px;
+        height: 40px;
+    }
+
+    .arrow{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media(max-width: 397px){
+    .card{
+        width: 250px;
+        height: 140px;
+    }
+
+    .examplePhoto{
+        width: 60px;
+        height: 60px;
+    }
+
+    .client{
+        width: 40px;
+        height: 40px;
+    }
+
+    .cardLeft{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 345px){
+    .arrowLeft, .arrowRight, .arrowLeft:hover, .arrowRight:hover, .btn_active{
+        width: 30px;
+        height: 30px;
+    }
+
+    .card{
+        width: 220px;
+        height: 120px;
+    }
+
+    .cardMiddle{
+        font-size: 6px;
+    }
+}
+
+@media(max-width: 305px){
+    .card{
+        width: 200px;
+        height: 100px;
+    }
+}
+
+@media(max-width: 285px){
+    .card{
+        width: 180px;
+    }
+
+    .examplePhoto{
+        width: 40px;
+        height: 40px;
+    }
+
+    .client{
+        width: 30px;
+        height: 30px;
+    }
+
+    .cardLeft{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 259px){
+    .card{
+        width: 150px;
+        height: 80px;
+    }
+
+    .cardMiddle{
+        font-size: 4px;
+    }
+}
+
+@media(max-width: 225px){
+    .arrowLeft, .arrowRight, .arrowLeft:hover, .arrowRight:hover, .btn_active{
+        width: 20px;
+        height: 20px;
+    }
+
+    .arrow{
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media(max-width: 207px){
+    .card{
+        width: 120px;
+    }
+
+    .client{
+        width: 20px;
+        height: 20px;
+    }
+
+    .cardLeft{
+        font-size: 6px;
+    }
+
+    .examplePhoto{
+        width: 30px;
+        height: 30px;
+    }
 }
