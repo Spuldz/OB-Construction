@@ -409,6 +409,10 @@ color: #F5F5F5;
     .section4Bottom p{
         font-size: 15px;
     }
+
+    .section2Top{
+        font-size: 8px;
+    }
 }
 
 @media(max-width: 240px){
@@ -448,5 +452,9 @@ color: #F5F5F5;
 @media(max-width: 193px){
     .section3Top{
         font-size: 12px;
+    }
+
+    .section2Top{
+        font-size: 6px;
     }
 }
