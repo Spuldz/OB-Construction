@@ -93,24 +93,6 @@ export const Landing = () => {
 }
 
 /*
-            
-            <div className={styles.section4}>
-                 <div className={styles.section4Top}>
-                  <span>Mūsu pakalpojumi</span>
-                 </div>
-                 <div className={styles.section4Bottom}>
-                     <span>Bruģa ieklāšana</span>
-                     <p>Mēs piedāvājam dažādu veidu bruģēšanas pakalpojumus, sākot no pamatu izveides līdz galīgajai bruģēšanas kārtošanai.</p>
-                     <div className={!clicked ? styles.section4Btn : styles.section4BottomButtonActive} onMouseDown={() => {
-                        setClicked(true)
-                        nav("/ieliksana")
-                     }}
-                     onMouseUp={() => setClicked(false)}>
-                        Uzzināt vairāk
-                        <img src={arrowRightSmall}/>
-                     </div>
-                 </div>
-            </div>
             <div className={styles.section5}>
                  <div className={styles.section5Top}>
                   <span>
