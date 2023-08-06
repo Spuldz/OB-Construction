@@ -18,7 +18,6 @@
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
-    line-height: 36px;
     color: #F5F5F5;
 }
 
@@ -38,6 +37,23 @@
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
-    line-height: 36px;
     color: #E1E0E0;
+}
+
+@media(max-width: 609px){
+    .main{
+        width: 100%;
+    }
+}
+
+@media(max-width: 417px){
+    .top span, .bottom{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 269px){
+    .top span, .bottom{
+        font-size: 12px;
+    }
 }

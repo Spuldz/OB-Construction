@@ -88,11 +88,6 @@ export const Landing = () => {
                      </div>
                  </div>
             </div>
-        </div>
-    )
-}
-
-/*
             <div className={styles.section5}>
                  <div className={styles.section5Top}>
                   <span>
@@ -107,4 +102,10 @@ export const Landing = () => {
                   <Question q="Piektais jautājums?" a="Atbilde uz jautājumu..."/>
                  </div>
             </div>
+        </div>
+    )
+}
+
+/*
+
            */
