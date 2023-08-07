@@ -1,10 +1,23 @@
 import styles from '../css/formFooter.module.css'
 import send from '../assets/send.svg'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export const FormFooter = () => {
 
     const [clicked, setClicked] = useState(false)
+
+    const [width, setWidth] = useState<number>(window.innerWidth);
+
+
+    function handleWindowSizeChange() {
+        setWidth(window.innerWidth);
+    }
+    useEffect(() => {
+        window.addEventListener('resize', handleWindowSizeChange);
+        return () => {
+            window.removeEventListener('resize', handleWindowSizeChange);
+        }
+    }, []);
 
     return(
         <div className={styles.main}>
@@ -18,9 +31,11 @@ export const FormFooter = () => {
                     <span style={{color: "#9A7426"}}>info@obconstruction.lv</span>
                     <span style={{color: "#F5F5F5"}}>+371 27 767 420</span>
                 </div>
-                <span className={styles.leftBottomText}>
+                {width >= 734 ? (
+                    <span className={styles.leftBottomText}>
                     2023 OBConstruction. Visas tiesības aizsargātas.
                 </span>
+                ) : null}
             </div>
             <div className={styles.right}>
                 <div>
@@ -46,8 +61,13 @@ export const FormFooter = () => {
                 onMouseDown={() => setClicked(true)}
                 onMouseUp={() => setClicked(false)}>
                     <span>Saņemt bezmaksas konsultāciju</span>
-                    <img src={send}/>
+                    <img src={send} className={styles.btnIcon}/>
                 </div>
+                {width <= 733 ? (
+                    <span className={styles.leftBottomText2}>
+                        2023 OBConstruction. Visas tiesības aizsargātas.
+                    </span>
+                ) : null}
             </div>
         </div>
     )

@@ -8,7 +8,6 @@
 
 
 .left{
-    height: 100%;
     width: 50%;
     box-sizing: border-box;
     padding-top: 150px;
@@ -21,7 +20,6 @@
     font-style: normal;
     font-weight: 400;
     font-size: 21px;
-    line-height: 26px;
     color: #F5F5F5;
 }
 
@@ -30,7 +28,6 @@
     font-style: normal;
     font-weight: 700;
     font-size: 70px;
-    line-height: 94px;
     text-transform: uppercase;
     color: #F5F5F5;
 
@@ -45,7 +42,6 @@
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
 }
 
 .leftBottomText{
@@ -55,12 +51,19 @@
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
-    line-height: 24px;
+    color: #F5F5F5;
+}
+
+.leftBottomText2{
+    bottom: 45px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
     color: #F5F5F5;
 }
 
 .right{
-    height: 100%;
     width: 50%;
     box-sizing: border-box;
     padding-top: 150px;
@@ -76,7 +79,6 @@
     font-style: normal;
     font-weight: 700;
     font-size: 21px;
-    line-height: 26px;
     color: #F5F5F5;
 }
 
@@ -96,7 +98,7 @@
 }
 
 .agreement{
-    width: 532px;
+    width: 100%;
     display: flex;
     gap: 10px;
     align-items: center;
@@ -203,4 +205,156 @@
     */
     -ms-user-select: none;
     user-select: none;
+}
+
+@media(max-width: 1363px){
+    .right{
+        padding-left: 0;
+    }
+}
+
+@media(max-width: 1105px){
+    .left{
+        padding-left: 10px;
+    }
+
+    .textInputLarge, .textarea{
+        width: 500px;
+    }
+
+    .btn, .btn_active, .btn:hover{
+        width: 500px;
+    }
+}
+
+@media(max-width: 1029px){
+    .textInputLarge, .textarea{
+        width: 400px;
+    }
+
+    .btn, .btn_active, .btn:hover{
+        width: 400px;
+    }
+}
+
+@media(max-width: 841px){
+    .title{
+        font-size: 60px;
+    }
+
+    .left p{
+        font-size: 16px;
+    }
+
+    .info{
+        font-size: 16px;
+    }
+
+    .textInputLarge, .textarea{
+        width: 350px;
+        height: 65px;
+    }
+
+    .btn, .btn_active, .btn:hover{
+        width: 350px;
+        font-size: 16px;
+    }
+
+    .agreement{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 733px){
+    .main{
+        flex-direction: column;
+        height: 1300px;
+    }
+
+    .right{
+        width: 100%;
+        padding-left: 5%;
+    }
+
+    .left{
+        width: 100%;
+        text-align: center;
+    }
+
+    .info{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 393px){
+    .textarea, .textInputLarge{
+        width: 80%;
+    }
+
+    .btn, .btn_active, .btn:hover{
+       width: 80%;
+    }
+}
+
+@media(max-width: 361px){
+    .btn, .btn_active, .btn:hover{
+        height: 60px;
+        font-size: 12px;
+    }
+
+    .btnIcon{
+        width: 20px;
+        height: 20px;
+    }
+
+    .title{
+        font-size: 40px;
+    }
+
+    .left p{
+        font-size: 12px;
+    }
+
+    .info{
+        font-size: 12px;
+    }
+
+    .right label{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 275px){
+    .info{
+        font-size: 10px;
+    }
+
+    .left p{
+        font-size: 10px;
+    }
+
+    .title{
+        font-size: 30px;
+    }
+
+    .btn, .btn:hover, .btn_active{
+        font-size: 10px;
+        width: 95%;
+    }
+
+    .textInputLarge{
+        width: 95%;
+    }
+
+    .textarea{
+        width: 95%;
+        height: 80px;
+    }
+}
+
+@media(max-width: 229px){
+    .info, .left p{
+        font-size: 8px;
+    }
 }

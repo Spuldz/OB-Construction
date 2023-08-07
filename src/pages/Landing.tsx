@@ -102,6 +102,7 @@ export const Landing = () => {
                   <Question q="Piektais jautājums?" a="Atbilde uz jautājumu..."/>
                  </div>
             </div>
+            <FormFooter/>
         </div>
     )
 }
