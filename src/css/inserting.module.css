@@ -147,3 +147,107 @@
     flex-direction: column;
     gap: 70px;
 }
+
+@media(max-width: 1295px){
+    .section4Bottom{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .section4Top{
+        height: 35%;
+    }
+
+    .section4{
+        height: 900px;
+    }
+}
+
+@media(max-width: 1139px){
+    .section2{
+        flex-direction: column;
+        height: 1000px;
+    }
+}
+
+@media(max-width: 865px){
+    .section1{
+        height: 600px;
+    }
+}
+
+@media(max-width: 525px){
+    .section1{
+        height: 400px;
+    }
+
+    .section4Top{
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 519px){
+    .section3Top{
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 391px){
+    .section3Top{
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 433px){
+    .section4Top{
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 327px){
+    .section1{
+        height: 250px;
+    }
+}
+
+@media(max-width: 311px){
+
+    .section4{
+        height: 900px;
+    }
+
+    .section4Top{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 303px){
+    .section3Top{
+        font-size: 24px;
+    }
+}
+
+@media(max-width: 237px){
+    .section3Top{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 211px){
+
+    .section4{
+        height: 800px;
+    }
+
+    .section4Top{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 199px){
+    .section3Top{
+        font-size: 16px;
+    }
+}

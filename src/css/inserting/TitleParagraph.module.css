@@ -3,6 +3,10 @@
 .main{
     width: 413px;
     height: 221px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
 }
 
 .top{
@@ -21,4 +25,46 @@
     font-family: 'Cabin', sans-serif;
     font-size: 24px;
     color: white;
+}
+
+@media(max-width: 457px){
+
+    .main{
+        width: 100%;
+        padding-left: 50px;
+    }
+
+    .top{
+        font-size: 24px;
+    }
+
+    .bottom{
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 345px){
+    .main{
+        padding-left: 10px;
+    }
+}
+
+@media(max-width: 269px){
+    .top{
+        font-size: 20px;
+    }
+
+    .bottom{
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 209px){
+    .top{
+        font-size: 16px;
+    }
+
+    .bottom{
+        font-size: 12px;
+    }
 }

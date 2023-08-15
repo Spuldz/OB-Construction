@@ -13,7 +13,7 @@ export const TitleModal = (props: {title:string, body:string, variant: any}) => 
                 <span>{props.title}</span>
             </div>
             <div className={styles.middle}>
-                <div className={styles.bodyLeft}>
+                <div className={props.variant.interactive ? styles.bodyLeft : styles.bodyLeft2}>
                     <span>{props.body}</span>
                 </div>
                 <div className={styles.bodyRight}>

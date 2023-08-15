@@ -51,6 +51,15 @@ justify-content: space-between;
     width: 60%;
 }
 
+.bodyLeft2{
+    display: flex;
+    justify-content: baseline;
+    place-items: center;
+    height: 100%;
+    text-align: left;
+    width: 60%;
+}
+
 .bodyRight{
     width: 40%;
 }
@@ -246,7 +255,6 @@ justify-content: space-between;
 
 @media(max-width: 578px){
     .main{
-        height: 200px;
     }
 
     .top{
@@ -340,7 +348,7 @@ justify-content: space-between;
 
 @media(max-width: 286px){
     .main{
-        height: 130px;
+        height: 150px;
         padding-bottom: 0;
     }
 }
@@ -373,5 +381,124 @@ justify-content: space-between;
     .image{
         width: 60px;
         height: 30px;
+    }
+}
+
+/*
+    MAIN 2
+*/
+
+@media(max-width: 1367px){
+    .main2{
+        width: 85%;
+    }
+
+    .image{
+        width: 400px;
+        height: 200px;
+        top: 30%;
+    }
+}
+
+@media(max-width: 1083px){
+    .bodyLeft2{
+        font-size: 20px;
+        line-height: normal;
+    }
+
+    .image{
+        width: 350px;
+        height: 150px;
+        top: 35%;
+    }
+}
+
+@media(max-width: 949px){
+    .main2{
+        height: 350px;
+    }
+
+    .image{
+        width: 250px;
+        height: 150px;
+    }
+}
+
+@media(max-width: 719px){
+    .main2{
+        height: 300px;
+    }
+}
+
+@media(max-width: 693px){
+    .image{
+        width: 200px;
+        height: 100px;
+        top: 40%;
+    }
+
+    .bodyLeft2{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 567px){
+    .main2{
+        height: 200px;
+    
+    }
+
+    .bodyLeft2{
+        display: block;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .image{
+        width: 150px;
+        height: 75px;
+        top: 45%;
+    }
+}
+
+@media(max-width: 400px){
+    .main2{
+        height: 150px;
+    }
+
+    .bodyLeft2{
+        font-size: 12px;
+    }
+
+    .image{
+        width: 100px;
+        height: 50px;
+        top: 50%;
+    }
+}
+
+@media(max-width: 338px){
+
+    .main2{
+        height: 100px;
+    }
+
+    .bodyLeft2{
+        font-size: 8px;
+    }
+}
+
+@media(max-width: 292px){
+    .bodyLeft2{
+        font-size: 6px;
+    }
+
+    .main2{
+        height: 80px;
+    }
+
+    .image{
+        width: 75px;
+        height: 35px;
     }
 }

@@ -72,6 +72,11 @@ export const Inserting = () => {
                     })}
                 </div>
             </div>
+        </>
+    )
+}
+
+/*
             <div className={styles.section5}>
                 <span>Mēs esam apņēmības pilni, lai nodrošinātu jums visasugstāko kvalitāti un pārsteidzošu pieredzi</span>
             </div>
@@ -102,6 +107,4 @@ export const Inserting = () => {
                 </div>
             </div>
             <Footer/>
-        </>
-    )
-}
+            */

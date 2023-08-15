@@ -9,7 +9,7 @@ type Data = {
 
 export const Option = (props: {data: Data}) => {
     return(
-        <div className={styles.main} style={{width: props.data.long ? '956px' : '380px'}}>
+        <div className={props.data.long ? styles.mainLong : styles.main}>
             <div className={styles.top}>
                 <div className={styles.img}
                 style={{backgroundImage: "URL("+props.data.image+")"}}></div>

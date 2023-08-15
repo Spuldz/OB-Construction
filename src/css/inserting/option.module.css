@@ -6,6 +6,13 @@
     flex-direction: column;
 }
 
+.mainLong{
+    width: 956px;
+    height: 285px;
+    display: flex;
+    flex-direction: column;
+}
+
 .top{
     width: 100%;
     height: 90px;
@@ -35,5 +42,37 @@
     color: white;
     font-family: 'Cabin', sans-serif;
     font-size: 24px;
+}
+
+@media(max-width: 1223px){
+    .middle{
+        font-size: 25px;
+    }
+
+    .bottom{
+        font-size: 20px;
+    }
+}
+
+
+@media(max-width: 1011px){
+    .mainLong{
+        width: 90%;
+    }
+}
+
+
+@media(max-width: 421px){
+    .middle{
+        font-size: 20px;
+    }
+
+    .bottom{
+        font-size: 16px;
+    }
+
+    .main{
+        width: 90%;
+    }
 }
 
