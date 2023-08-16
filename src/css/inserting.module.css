@@ -186,10 +186,26 @@
     }
 }
 
+@media(max-width: 813px){
+    .section6{
+        height: 900px;
+    }
+}
+
 @media(max-width: 654px){
     .section5{
         font-size: 36px;
         height: 450px;
+    }
+}
+
+@media(max-width: 551px){
+    .section6Top{
+        font-size: 40px;
+    }
+
+    .section6{
+        height: 800px;
     }
 }
 
@@ -207,6 +223,8 @@
     .section3Top{
         font-size: 40px;
     }
+
+    
 }
 
 @media(max-width: 391px){
@@ -221,6 +239,12 @@
     }
 }
 
+@media(max-width: 467px){
+    .section6{
+        height: 650px;
+    }
+}
+
 @media(max-width: 433px){
     .section4Top{
         font-size: 30px;
@@ -228,6 +252,26 @@
 
     .section5{
         font-size: 26px;
+    }
+
+    .section6Top{
+        font-size: 30px;
+    }
+
+    .section6{
+        height: 500px;
+    }
+}
+
+@media(max-width: 345px){
+    .section6{
+        height: 400px;
+    }
+}
+
+@media(max-width: 335px){
+    .section6Top{
+        font-size: 24px;
     }
 }
 
@@ -257,6 +301,16 @@
     .section3Top{
         font-size: 24px;
     }
+
+    .section6{
+        height: 300px;
+    }
+}
+
+@media(max-width: 265px){
+    .section6Top{
+        font-size: 20px;
+    }
 }
 
 @media(max-width: 258px){
@@ -269,6 +323,16 @@
 @media(max-width: 237px){
     .section3Top{
         font-size: 20px;
+    }
+}
+
+@media(max-width: 219px){
+    .section6Top{
+        font-size: 16px;
+    }
+
+    .section6{
+        height: 200px;
     }
 }
 
@@ -289,6 +353,12 @@
     }
 
     .section5{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 219px){
+    .section6Top{
         font-size: 12px;
     }
 }
