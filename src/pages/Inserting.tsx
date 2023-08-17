@@ -87,11 +87,6 @@ export const Inserting = () => {
                     }}/>
                 </div>
             </div>
-        </>
-    )
-}
-
-/*
             <div className={styles.section7}>
                 <div className={styles.section7Top}>
                     <div>
@@ -106,5 +101,11 @@ export const Inserting = () => {
                   <Question q="Piektais jautājums?" a="Atbilde uz jautājumu..."/>
                 </div>
             </div>
+        </>
+    )
+}
+
+/*
+
             <Footer/>
             */
