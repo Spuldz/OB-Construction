@@ -15,16 +15,17 @@
 .top{
     width: 100%;
     height: 33%;
-   
+    box-sizing: border-box;
 }
 
 .top div{
-    width: 1184px;
+    width: 100%;
     font-family: "Cinzel", sans-serif;
     font-weight: 700;
     font-size: 56px;
     color: white;
     text-align: left;
+    box-sizing: border-box;
 }
 
 .middle{
@@ -32,6 +33,7 @@
     height: 33%;
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .image{
@@ -41,9 +43,8 @@
     background-size: cover;
     background-image: url(../assets/logo-small.svg);
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-10%, -45%);
+    top: 35%;
+    left: 60%;
     border: none;
 }
 
@@ -148,3 +149,256 @@
     background-color: white;
 }
 
+@media(max-width: 1274px){
+    .image{
+        width: 320px;
+        height: 320px;
+        left: 70%;
+    }
+
+    .top div{
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 1104px){
+    .image{
+        right: 0;
+    }
+
+    .middleLeftInfo{
+        font-size: 20px;
+        width: 560px;
+    }
+}
+
+@media(max-width: 1078px){
+    .image{
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media(max-width: 1008px){
+    .image{
+        top: 60%;
+        left: 37%;
+    }
+}
+
+@media(max-width: 894px){
+
+    .image{
+        top: 50%;
+        left: 37%;
+    }
+
+    .main{
+        padding-top: 30px;
+        height: 800px;
+    }
+
+    .top div{
+        font-size: 30px;
+    }
+
+    .top{
+        height: 30%;
+    }
+
+    .middle{
+        height: 60%;
+    }
+
+    .middleLeftInfo{
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .bottom{
+        height: 10%;
+    }
+}
+
+@media(max-width: 850px){
+    .image{
+        top: 55%;
+    }
+}
+
+@media(max-width: 688px){
+    .top div{
+        width: 100%;
+    }
+
+    .main{
+        padding-left: 60px;
+        padding-right: 30px;
+    }
+
+    .image{
+        left: 31%;
+    }
+}
+
+@media(max-width: 524px){
+    .image{
+        left: 27%;
+    }
+}
+
+@media(max-width: 494px){
+    .btn, .btn:hover, .btn_active{
+        width: 300px;
+        font-size: 16px;
+    }
+
+    .top div{
+        font-size: 24px;
+    }
+
+    .image{
+        left: 22%;
+        width: 240px;
+        height: 240px;
+    }
+
+    .bottom{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 452px){
+    .main{
+        padding-left: 20px;
+    }
+
+    .image{
+        left: 20%;
+    }
+}
+
+@media(max-width: 355px){
+    .top div{
+        font-size: 20px;
+    }
+
+    .top{
+        height: 20%;
+    }
+
+    .middle{
+        height: 70%;
+    }
+
+    .image{
+        width: 200px;
+        height: 200px;
+    }
+
+    .btn, .btn:hover, .btn_active{
+        width: 250px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 333px){
+    .bottom{
+        font-size: 10px;
+        width: 100%;
+    }
+}
+
+@media(max-width: 301px){
+    .image{
+        left: 17%;
+    }
+
+    .middleLeftInfo{
+        font-size: 14px;
+    }
+
+    .top div{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 287px){
+    .btn, .btn:hover, .btn_active{
+        width: 200px;
+        height: 60px;
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 269px){
+    .image{
+        width: 160px;
+        height: 160px;
+        left: 19%;
+        top: 60%;
+    }
+
+    .main{
+        height: 700px;
+    }
+
+    .top{
+        height: 30%;
+    }
+
+    .middle{
+        height: 60%;
+    }
+
+    .bottom{
+        height: 10%;
+    }
+}
+
+@media(max-width: 228px){
+    .btn, .btn:hover, .btn_active{
+        width: 140px;
+        height: 50px;
+        font-size: 8px;
+    }
+
+    .image{
+        width: 140px;
+        height: 140px;
+    }
+
+    .top div{
+        font-size: 12px;
+    }
+
+    .middleLeftInfo{
+        font-size: 12px;
+    }
+
+    .top{
+        height: 20%;
+    }
+
+    .middle{
+        height: 70%;
+    }
+
+    .bottom{
+        height: 10%;
+    }
+
+    .main{
+        height: 600px;
+    }
+}
+
+@media(max-width: 192px){
+    .image{
+        left: 13%;
+    }
+
+    .top div{
+        font-size: 12px;
+    }
+}

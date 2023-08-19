@@ -101,11 +101,7 @@ export const Inserting = () => {
                   <Question q="Piektais jautājums?" a="Atbilde uz jautājumu..."/>
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }
-
-/*
-
-            <Footer/>
-            */
