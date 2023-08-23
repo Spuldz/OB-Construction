@@ -28,14 +28,13 @@ type Data = {
 }
 
 
-export const Inserting = () => {
+export const Renovation = () => {
 
     return(
         <>
             <Header/>
             <div className={styles.section1}>
-                <TitleModal title="BRUĢA IEKLĀŠANA" body="Mēs sniedzam kvaletatīvus un augstākās klases bruģēšanas pakalpojumus, lai jūsu
-                īpašums izskatītos skaists un kopts, neatkarīgi no tā, vai tas ir privātais mājoklis vai komerciāls objekts."
+                <TitleModal title="RENOVĀCIJA" body="Mēs sniedzam kvalitatīvus un augstas klases bruģēšanas pakalpojumus, lai jūsu īpašums izskatītos skaists un kopts, neatkarīgi no tā, vai tas ir privātais mājoklis vai komerciāls objekts."
                 variant={{
                     interactive: false,
                     buttonText: ""

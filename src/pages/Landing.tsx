@@ -80,7 +80,7 @@ export const Landing = () => {
                      )}
                      <div className={!clicked ? styles.section4Btn : styles.section4BottomButtonActive} onMouseDown={() => {
                         setClicked(true)
-                        nav("/ieliksana")
+                        nav("/ieklasana")
                      }}
                      onMouseUp={() => setClicked(false)}>
                         Uzzināt vairāk

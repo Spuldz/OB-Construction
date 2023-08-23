@@ -8,6 +8,9 @@ import { Landing } from './pages/Landing'
 import { Inserting } from './pages/Inserting'
 import { Contact } from './pages/Contact'
 import { TitleModal } from './components/TitleModal'
+import { YardSettling } from './pages/YardSettling'
+import { WoodenFurniture } from './pages/WoodenFurniture'
+import {routes} from './data/routes'
 
 
 function App() {
@@ -16,21 +19,17 @@ function App() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    console.log(routes)
   }), [pathname]
   
 
   return (
     <Routes>
-      <Route path='/' element={<Landing/>}/>
-      <Route path='/ieliksana' element={<Inserting/>}/>
-      <Route path='/kontakti' element={<Contact/>}/>
-      <Route path='/test' element={                <TitleModal
-                 title={"Tavs sapņu pagalms vien dažu soļu attālumā"}
-                 body='Ja jūs sapņojat par kādu konkrētu pagalma dizainu, vidi vai ainavu, mēs esam gatavi jūsu vīziju pārvērst par realitāti'
-                 variant={{
-                    interactive: true,
-                    buttonText: "Saņemt bezmaksas konsutlāciju!"
-                 }}/>}/>
+      {(
+        routes.map((data, i) => (
+          <Route path={data.route} element={<data.component/>} key={i}/>
+        ))
+      )}
     </Routes>
   )
 }

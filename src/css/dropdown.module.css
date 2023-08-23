@@ -35,8 +35,9 @@
 }
 
 .main div:hover{
-    background-color: white;
+    background: white;
     color: black;
+    
 }
 
 @media(max-width: 1260px){

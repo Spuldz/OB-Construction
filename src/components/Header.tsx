@@ -39,7 +39,7 @@ export const Header = () => {
                     onMouseLeave={() => {
                       //  setIsHovering(false)
                     }}
-                    onClick={() => width <= 1280 ? setIsHovering(!isHovering) : nav("/pakalpojumi")}>PAKALPOJUMI</span></span>
+                    onClick={() => width <= 1280 ? setIsHovering(!isHovering) : null}>PAKALPOJUMI</span></span>
                     <span><Link to={"/darbi"} className={styles.link}>MŪSU DARBI</Link></span>
                     <span><Link to={"/kontakti"} className={styles.link}>KONTAKTI</Link></span>
                 </div>
